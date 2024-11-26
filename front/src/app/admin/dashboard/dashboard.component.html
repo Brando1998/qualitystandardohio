@@ -1,0 +1,12 @@
+<div class="dashboard-container">
+    <!-- Sidebar izquierdo -->
+    <aside class="sidebar-left">
+        <img src="/logo_01.ico" alt="logo">
+        <a routerLink="./services-list" class="icon"><img src="/sales.svg" alt="sales"></a>
+        <a href="#" (click)="logout()" class="icon logout"><img src="/power.svg" alt="sales"></a>
+    </aside>
+
+    <!-- Sección principal -->
+    <router-outlet id="router-outlet"></router-outlet>
+    
+</div>

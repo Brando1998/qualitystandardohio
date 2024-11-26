@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+
+.politics-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.politics-container p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.politics-container input {
+    margin-right: 0.5rem;
+}

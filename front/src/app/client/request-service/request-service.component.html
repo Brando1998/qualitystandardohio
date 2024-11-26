@@ -1,0 +1,35 @@
+<main class="container">
+    <app-header (prevStep)="onPrevStep()" [currentStep]="currentStep"></app-header>
+    <div *ngIf="currentStep === 1" @fadeInOut>
+        <app-client-request-service-step-1 [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-step-1>
+    </div>
+    <div *ngIf="currentStep === 2" @fadeInOut>
+        <app-client-request-service-step-2 [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-step-2>
+    </div>
+    <div *ngIf="currentStep === 3" @fadeInOut>
+        <app-client-request-service-step-3 [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-step-3>
+    </div>
+    <div *ngIf="currentStep === 4" @fadeInOut>
+        <app-client-request-service-step-4 [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-step-4>
+    </div>
+    <div *ngIf="currentStep === 5" @fadeInOut>
+        <app-client-request-service-step-5 [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-step-5>
+    </div>
+
+    <div *ngIf="currentStep === 6" @fadeInOut>
+        <app-client-request-service-resume [stepData]="stepData"
+            (nextStep)="onNextStep($event)"></app-client-request-service-resume>
+    </div>
+
+    <div *ngIf="currentStep === 7" @fadeInOut>
+        <app-client-request-service-go-to-pay></app-client-request-service-go-to-pay>
+    </div>
+
+    <app-footer></app-footer>
+
+</main>

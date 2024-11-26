@@ -1,0 +1,15 @@
+<section>
+    <div class="message">
+        <div>Now let's turn your house into a
+            sparkling home</div>
+        <p>PAY</p>
+    </div>
+    <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+     PAY
+        
+    </div>
+    <div class="d-flex align-items-center justify-content-center button-container">
+        <button (click)="placeOrder()" class="next-step">ORDER</button>
+        <a *ngIf="stripeUrl" [href]="stripeUrl">PAY</a>
+    </div>
+</section>

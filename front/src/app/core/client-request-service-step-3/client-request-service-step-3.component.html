@@ -1,0 +1,35 @@
+<section>
+    <div class="message">
+        <span>We will quote your service at the right
+            price and according to your real needs.</span>
+    </div>
+    <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+        <button [ngClass]="{'active': selectedType === 'apartment'}" class="tab-button" (click)="selectType('apartment')">
+            <img src="/icons/apartment.svg" alt="apartment icon">
+            <div>Apartment or
+                studio</div>
+        </button>
+        <button [ngClass]="{'active': selectedType === 'familiar'}" class="tab-button" (click)="selectType('familiar')">
+            <img src="/icons/house.svg" alt="familiar icon">
+            <div>Home</div>
+        </button>
+    </div>
+    <form [formGroup]="step3Form">
+        <div class="form-title">Number of rooms</div>
+        <div class="form-group">
+            <input type="number" name="bedrooms" id="bedrooms" formControlName="bedroomsNumber">
+            <label for="bedrooms">Bedrooms number</label>
+        </div>
+        <div class="form-group">
+            <input type="number" name="bathrooms" id="bathrooms" formControlName="bathroomsNumber">
+            <label for="bathrooms">Bathrooms number</label>
+        </div>
+    </form>
+    <div class="price">
+        <h2>Service price</h2>
+        <h3>{{servicePrice | currency}}</h3>
+    </div>
+    <div class="d-flex align-items-center justify-content-center button-container">
+        <button [disabled]="step3Form.invalid" class="next-step" (click)="onNextStep()">Next step</button>
+    </div>
+</section>

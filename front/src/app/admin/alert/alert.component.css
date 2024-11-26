@@ -1,0 +1,66 @@
+/* Estilos para el cuadro de confirmación */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    /* Asegura que esté frente a todo el contenido */
+  }
+  
+  .modal-dialog-centered {
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .modal-body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 5px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  button {
+    background-color: #008037;
+    color: #ffffff;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #10C610;
+  }
