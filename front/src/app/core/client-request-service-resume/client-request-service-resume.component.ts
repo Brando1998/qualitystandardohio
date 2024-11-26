@@ -16,6 +16,7 @@ export class ClientRequestServiceResumeComponent implements OnInit {
   @Output() nextStep = new EventEmitter<any>();
   @Input() stepData!: string | null;
   resume: any;
+  step2: any;
   step3: any;
   step4: any;
   step5: any;
@@ -35,10 +36,10 @@ export class ClientRequestServiceResumeComponent implements OnInit {
 
   ngOnInit(): void {
     this.resume = this.formDataService.getAllFormData();
+    this.step2 = JSON.parse(this.resume.step2)
     this.step3 = JSON.parse(this.resume.step3)
     this.step4 = JSON.parse(this.resume.step4)
-    this.step5 = JSON.parse(this.resume.step5)
-
+    
     if (this.stepData) {
       const stepData = JSON.parse(this.stepData)
       this.step6Form.setValue(stepData)
@@ -112,7 +113,7 @@ export class ClientRequestServiceResumeComponent implements OnInit {
   }
 
   private updateServicePrice() {
-    const formValue = this.step3;
+    const formValue = this.step2;
     console.log(formValue)
 
     const typeOfConstruction = formValue.typeOfConstruction;
@@ -141,7 +142,7 @@ export class ClientRequestServiceResumeComponent implements OnInit {
       this.servicePrice = 0; // Valor por defecto si no cumple ninguna condición
     }
 
-    const servicesArray = this.step4.extraServices;
+    const servicesArray = this.step3.extraServices;
     this.servicePrice = ((servicesArray?.length || 0) * 25) + this.servicePrice;
   }
 

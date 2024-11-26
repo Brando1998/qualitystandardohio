@@ -34,7 +34,8 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.frequency.frequency) {
+    console.log(this.frequency)
+    if (this.frequency != null) {
       this.selectDate(new Date(this.frequency.date))
       this.selectedTime = this.frequency.time
       this.emitDateTime();

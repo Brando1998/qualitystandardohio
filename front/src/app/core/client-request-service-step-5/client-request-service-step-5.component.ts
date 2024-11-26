@@ -43,11 +43,10 @@ export class ClientRequestServiceStep5Component {
     setTimeout(()=>{
       this.selectedFrequency = frequency;
     },500)
+    console.log(frequency)
   }
 
   updateFrequency(dateTime: { date: Date | null; time: string; week: any | null; frequency: string | null } | null) {
-    // console.log(dateTime)
-    // console.log(this.selectedFrequency)
     if (dateTime) {
       dateTime.frequency = this.selectedFrequency;
       this.step5Form.controls.frequency.setValue(dateTime);

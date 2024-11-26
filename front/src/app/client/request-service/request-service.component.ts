@@ -8,7 +8,6 @@ import { ClientRequestServiceStep5Component } from '../../core/client-request-se
 import { NgIf } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { ClientRequestServiceResumeComponent } from '../../core/client-request-service-resume/client-request-service-resume.component';
-import { ClientRequestServiceGoToPayComponent } from '../../core/client-request-service-go-to-pay/client-request-service-go-to-pay.component';
 import { FooterComponent } from '../../core/footer/footer.component';
 import { FormDataService } from '../../services/form-data.service';
 
@@ -23,7 +22,6 @@ import { FormDataService } from '../../services/form-data.service';
     ClientRequestServiceStep4Component,
     ClientRequestServiceStep5Component,
     ClientRequestServiceResumeComponent,
-    ClientRequestServiceGoToPayComponent,
     FooterComponent,
     NgIf
   ],
@@ -42,7 +40,7 @@ import { FormDataService } from '../../services/form-data.service';
   ]
 })
 export class RequestServiceComponent implements OnInit {
-  currentStep = 1;
+  currentStep = 6;
   stepData: any = null;
 
   constructor(private formDataService: FormDataService) { }

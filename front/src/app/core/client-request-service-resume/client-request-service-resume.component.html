@@ -6,15 +6,15 @@
     </div>
     <div class="d-flex justify-content-evenly align-items-center flex-wrap">
         <ul>
-            <li *ngIf="step3.typeOfConstruction == 'famliar'">Famliar house (BA {{step3.bathroomsNumber}}, BR
-                {{step3.bedroomsNumber}})</li>
-            <li *ngIf="step3.typeOfConstruction == 'apartment'">Apartment or studio</li>
-            <li *ngIf="step5.frequency.frequency == 'monthly'">Monthly ({{step5.frequency.week}})</li>
-            <li *ngIf="step5.frequency.frequency == 'one_time'">One time</li>
-            <li *ngIf="step5.frequency.frequency == 'every_two_weeks'">Every two weeks</li>
-            <li *ngIf="step5.frequency.frequency == 'weekly'">Weekly</li>
-            <li *ngFor="let extra of step4.extraServices">Extra: {{extra}}</li>
-            <li>{{step3.bedroomsNumber}} bedroom - {{step3.bathroomsNumber}} bathroom</li>
+            <li *ngIf="step2.typeOfConstruction == 'famliar'">Famliar house (BA {{step2.bathroomsNumber}}, BR
+                {{step2.bedroomsNumber}})</li>
+            <li *ngIf="step2.typeOfConstruction == 'apartment'">Apartment or studio</li>
+            <li *ngIf="step4.frequency.frequency == 'monthly'">Monthly ({{step4.frequency.week}})</li>
+            <li *ngIf="step4.frequency.frequency == 'one_time'">One time</li>
+            <li *ngIf="step4.frequency.frequency == 'every_two_weeks'">Every two weeks</li>
+            <li *ngIf="step4.frequency.frequency == 'weekly'">Weekly</li>
+            <li *ngFor="let extra of step3.extraServices">Extra: {{extra}}</li>
+            <li>{{step2.bedroomsNumber}} bedroom - {{step2.bathroomsNumber}} bathroom</li>
         </ul>
 
         <form [formGroup]="step6Form" class="help-container">
