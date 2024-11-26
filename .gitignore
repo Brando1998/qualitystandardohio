@@ -1,0 +1,66 @@
+# --- Python/Django ---
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+__pycache__/
+*.py[cod]
+.Python
+env/
+venv/
+venv.bak/
+env.bak/
+ENV/
+ENV.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.coverage
+coverage.xml
+htmlcov/
+*.mypy_cache/
+.pytest_cache/
+celerybeat-schedule
+celerybeat.pid
+.DS_Store
+media/
+staticfiles/
+node_modules/
+*.swp
+.idea/
+.vscode/
+
+# --- Angular ---
+node_modules/
+dist/
+coverage/
+.angular/
+.angular/cache/
+
+# --- Environment and Secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets.json
+
+# --- IDE/Editor Specific ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+*.out
+*.err
+logs/
+*.pid
