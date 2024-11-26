@@ -40,7 +40,7 @@ import { FormDataService } from '../../services/form-data.service';
   ]
 })
 export class RequestServiceComponent implements OnInit {
-  currentStep = 6;
+  currentStep = 1;
   stepData: any = null;
 
   constructor(private formDataService: FormDataService) { }
