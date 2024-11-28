@@ -1,1 +1,1 @@
-web: cd back && gunicorn back_qualitystandardohio.wsgi
+web: gunicorn back_qualitystandardohio.wsgi
